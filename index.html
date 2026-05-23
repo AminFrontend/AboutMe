@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Лендинг-презентация junior frontend разработчика с рабочей формой обратной связи и API."
+    />
+    <title>Амин Пашаев - Junior Frontend Developer</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#hero" aria-label="На главную">
+        <span>A</span>
+        <strong>Junior Frontend Developer</strong>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#about">О себе</a>
+        <a href="#workflow">Подход</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <p class="eyebrow">Junior Frontend Developer</p>
+          <h1>Амин Пашаев</h1>
+          <p class="hero__lead">
+            Делаю аккуратные адаптивные интерфейсы, подключаю формы к API и
+            учусь доводить задачу до рабочего результата.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#contact">Связаться</a>
+            <a class="button button--ghost" href="#projects"
+              >Смотреть проекты</a
+            >
+          </div>
+        </div>
+
+        <div class="hero__stats" aria-label="Ключевые навыки">
+          <article>
+            <span>01</span>
+            <strong>Frontend</strong>
+            <p>HTML5, CSS3, JavaScript, Vite</p>
+          </article>
+          <article>
+            <span>02</span>
+            <strong>API</strong>
+            <p>Express, POST-запросы, обработка ошибок</p>
+          </article>
+          <article>
+            <span>03</span>
+            <strong>Process</strong>
+            <p>Git, README, ручная проверка</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section__heading">
+          <p class="eyebrow">О себе</p>
+          <h2>
+            Развиваюсь во frontend и постепенно разбираюсь в полном цикле
+            задачи.
+          </h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__text">
+            <p>
+              Я junior frontend-разработчик, который помогает превращать дизайн
+              и идею в понятный, адаптивный и рабочий интерфейс. Мой фокус —
+              валидная верстка, аккуратная структура проекта, читаемый
+              JavaScript и базовая интеграция с API. Я уделяю внимание не только
+              внешнему виду, но и поведению интерфейса: loading, success и error
+              состояниям, валидации формы и понятной обратной связи для
+              пользователя. В этом проекте я показал полный цикл работы:
+              сверстал лендинг-презентацию, реализовал форму обратной связи,
+              подключил Express API, отправку писем и добавил AI helper.
+              AI-инструменты использую как помощника для анализа, поиска ошибок
+              и ускорения работы, но финальные решения проверяю и дорабатываю
+              вручную.
+            </p>
+          </div>
+
+          <div class="stack-card">
+            <h3>Стек</h3>
+            <div class="tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Vite</span>
+              <span>Gulp</span>
+              <span>Git</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>Nodemailer</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section workflow" id="workflow">
+        <div class="section__heading">
+          <p class="eyebrow">Как я работаю</p>
+          <h2>
+            Сначала разбираю задачу, потом собираю простой рабочий вариант и
+            проверяю крайние случаи.
+          </h2>
+        </div>
+
+        <div class="workflow__grid">
+          <article class="step">
+            <span>1</span>
+            <h3>Понимание задачи</h3>
+            <p>
+              Фиксирую обязательные пункты, продумываю структуру страницы и
+              состояния интерфейса.
+            </p>
+          </article>
+          <article class="step">
+            <span>2</span>
+            <h3>Frontend</h3>
+            <p>
+              Верстаю семантично, сразу проверяю адаптивность, доступность и
+              поведение формы.
+            </p>
+          </article>
+          <article class="step">
+            <span>3</span>
+            <h3>API</h3>
+            <p>
+              Подключаю обработчик формы, валидацию, отправку писем и понятные
+              ответы сервера.
+            </p>
+          </article>
+          <article class="step">
+            <span>4</span>
+            <h3>Проверка</h3>
+            <p>
+              Запускаю build, проверяю успешную отправку, ошибки валидации и
+              README для запуска.
+            </p>
+          </article>
+        </div>
+
+        <div class="ai-panel">
+          <div>
+            <p class="eyebrow">AI helper</p>
+            <h3>Короткое описание опыта</h3>
+            <p>
+              Небольшая демонстрация AI-интеграции: backend может обращаться к
+              OpenAI API, а без ключа возвращает локальный fallback.
+            </p>
+          </div>
+          <form class="ai-form" id="aiForm">
+            <label for="profileText">Текст для краткого summary</label>
+            <textarea id="profileText" name="profile" rows="5">
+Я junior frontend разработчик. Умею делать адаптивную верстку на HTML, CSS и JavaScript, работал с Vite, Gulp и Git. В этом проекте реализовал лендинг, API форму, отправку писем и обработку состояний.</textarea
+            >
+            <button class="button button--primary" type="submit">
+              Сгенерировать summary
+            </button>
+            <p class="form-message" id="aiMessage" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="section__heading">
+          <p class="eyebrow">Кейсы и опыт</p>
+          <h2>
+            Учебные и личные проекты, где я сам отвечал за верстку, структуру и
+            проверку результата.
+          </h2>
+        </div>
+
+        <div class="projects__grid">
+          <article class="project-card project-card--bitroid">
+            <p>тестовое задание</p>
+            <h3>Bitroid</h3>
+            <span
+              >Лендинг digital-агентства про создание сайтов под ключ с
+              SEO-продвижением, заявкой на консультацию и подробными
+              информационными блоками.</span
+            >
+            <ul>
+              <li>Лично делал верстку секций, навигацию и адаптив.</li>
+              <li>Добавил интерактивные элементы: поиск, бургер и FAQ.</li>
+              <li>Стек: HTML5, CSS3, JavaScript, Schema.org, Vercel.</li>
+            </ul>
+            <a
+              href="https://bitroid-five.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              >Открыть проект</a
+            >
+          </article>
+
+          <article class="project-card project-card--haval">
+            <p>Тестовое задание</p>
+            <h3>Лендинг автосалона Haval</h3>
+            <span
+              >Промо-лендинг для спецпредложения HAVAL JOLION с таймером,
+              слайдером автомобилей, выбором цвета и модальной заявкой.</span
+            >
+            <ul>
+              <li>Лично делал адаптивную верстку и интерактивные элементы.</li>
+              <li>
+                Подключил Swiper для карточек авто и Fancybox для модалки.
+              </li>
+              <li>Стек: HTML5, CSS3, JavaScript, Swiper, Fancybox, Vercel.</li>
+            </ul>
+            <a
+              href="https://haval-alpha.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              >Открыть проект</a
+            >
+          </article>
+
+          <article class="project-card project-card--vilin">
+            <p>Личный проект • в процессе</p>
+            <h3>VILIN</h3>
+            <span
+              >Сайт fashion-бренда с каталогом, трендовыми подборками и
+              визуальной подачей коллекций. Проект делается в паре с
+              дизайнером.</span
+            >
+            <ul>
+              <li>Отвечаю за frontend-реализацию и адаптацию макета.</li>
+              <li>
+                Сейчас дорабатываются разделы магазина и детали поведения.
+              </li>
+              <li>Стек: Vite, HTML5, CSS3, JavaScript, Swiper, Vercel.</li>
+            </ul>
+            <a href="https://vilin.vercel.app/" target="_blank" rel="noreferrer"
+              >Открыть проект</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="section__heading">
+          <p class="eyebrow">Контакты</p>
+          <h2>
+            Оставьте сообщение, и форма отправит письмо мне и копию на ваш
+            email.
+          </h2>
+        </div>
+
+        <div class="contact__layout">
+          <aside class="contact__info">
+            <h3>Связь</h3>
+            <a href="mailto:amin4000malik@gmail.com">amin4000malik@gmail.com</a>
+            <a href="tel:+79689337484">+7 968 933-74-84</a>
+            <a
+              href="https://t.me/Amin_frontend_dev"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Telegram: Amin_frontend_dev
+            </a>
+          </aside>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Имя</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                placeholder="Алексей"
+                required
+              />
+              <small data-error-for="name"></small>
+            </div>
+
+            <div class="field">
+              <label for="phone">Телефон</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                autocomplete="tel"
+                placeholder="+7 999 123-45-67"
+                required
+              />
+              <small data-error-for="phone"></small>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="mail@example.com"
+                required
+              />
+              <small data-error-for="email"></small>
+            </div>
+
+            <div class="field">
+              <label for="comment">Комментарий</label>
+              <textarea
+                id="comment"
+                name="comment"
+                rows="5"
+                placeholder="Напишите, по какому вопросу хотите связаться"
+                required
+              ></textarea>
+              <small data-error-for="comment"></small>
+            </div>
+
+            <button class="button button--primary form-submit" type="submit">
+              Отправить сообщение
+            </button>
+            <p class="form-message" id="formMessage" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Амин Пашаев - Junior Frontend Developer</p>
+      <a href="#hero">Наверх</a>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

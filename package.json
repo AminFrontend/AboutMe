@@ -1,0 +1,23 @@
+{
+  "name": "about-me-landing",
+  "version": "1.0.0",
+  "description": "Landing page presentation for a junior frontend developer with API contact form.",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "dev:client": "vite --host 0.0.0.0",
+    "dev:server": "node server/index.js",
+    "build": "gulp build",
+    "preview": "vite preview --host 0.0.0.0",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemailer": "^8.0.7"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "vite": "^6.4.2"
+  }
+}
